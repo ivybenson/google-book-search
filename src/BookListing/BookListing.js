@@ -1,5 +1,10 @@
 import React from "react";
 
 export default function BookListing(props) {
-  return <div>book listings to be delivered here</div>;
+  return (
+    <div>
+      <p>{props.books.items.volumeInfo.title}</p>
+      <p>{props.books.items.volumeInfo.authors}</p>
+    </div>
+  );
 }

@@ -20,8 +20,8 @@ class BookSearchApp extends Component {
     this.search(value);
   };
 
-  search = (query) => {
-    const url = `https://www.googleapis.com/books/v1/volumes?q=${query}&key=AIzaSyDQnKCvPg_jk-unlSmtCtrFzOvq5g37L-Q`;
+  componentDidMount() {
+    const url = `https://www.googleapis.com/books/v1/volumes?q=bell&key=AIzaSyDQnKCvPg_jk-unlSmtCtrFzOvq5g37L-Q`;
 
     fetch(url)
       .then((response) => {
@@ -31,8 +31,10 @@ class BookSearchApp extends Component {
         return response;
       })
       .then((response) => response.json())
-      .then((data) => {}
-  };
+      .then((data) => {
+        this.setState({ books: data });
+      });
+  }
 
   render() {
     return (
@@ -53,7 +55,7 @@ class BookSearchApp extends Component {
           <FilterBar />
         </div>
         <div>
-          <BookList />
+          <BookList books={this.state.books} />
         </div>
       </div>
     );
