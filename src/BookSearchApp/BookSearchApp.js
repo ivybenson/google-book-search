@@ -32,7 +32,7 @@ class BookSearchApp extends Component {
       })
       .then((response) => response.json())
       .then((data) => {
-        this.setState({ books: data });
+        this.setState({ books: data.items });
       });
   }
 

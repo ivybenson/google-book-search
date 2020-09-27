@@ -1,10 +1,12 @@
 import React from "react";
+import "./BookListing.css";
 
 export default function BookListing(props) {
   return (
-    <div>
-      <p>{props.books.items.volumeInfo.title}</p>
-      <p>{props.books.items.volumeInfo.authors}</p>
-    </div>
+    <li>
+      <img src={props.book.volumeInfo.imageLinks.thumbnail} alt="book" />
+      <p>{props.book.volumeInfo.title}</p>
+      <p>{props.book.volumeInfo.authors}</p>
+    </li>
   );
 }
