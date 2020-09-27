@@ -5,7 +5,11 @@ export default function FilterPrintType(props) {
     <div>
       <form>
         <label>Print Type:</label>
-        <select></select>
+        <select>
+          <option>All</option>
+          <option>Books</option>
+          <option>Magazine</option>
+        </select>
       </form>
     </div>
   );
