@@ -4,4 +4,14 @@ li {
   justify-content: space-around;
   text-align: center;
   outline: gray 1px;
+  font-weight: normal;
+}
+
+.BookListing p {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+}
+
+.description {
+  display: none;
 }

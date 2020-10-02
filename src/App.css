@@ -1,11 +1,13 @@
-* {
-  font-family: Helvetica Neue, Helvetica, Arial, Utkal, sans-serif;
-  font-weight: bold;
+.BookListing p {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
 }
 
 body {
   padding: 0px;
   margin: 0px;
+  font-family: Helvetica Neue, Helvetica, Arial, Utkal, sans-serif;
+  font-weight: bold;
 }
 
 header {
