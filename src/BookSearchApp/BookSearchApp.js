@@ -65,12 +65,13 @@ class BookSearchApp extends Component {
           </form>
           <div>
             <form>
-              <label>Print Type:</label>
+              <label onChange={(e) => this.onChange(e)}>Print Type:</label>
               <select>
                 <option>All</option>
                 <option>Books</option>
                 <option>Magazine</option>
               </select>
+              <button onChange={(e) => this.onChange(e)}>Update Search</button>
             </form>
           </div>
           <div>
@@ -84,6 +85,7 @@ class BookSearchApp extends Component {
                 <option>Paid-ebooks</option>
                 <option>Ebooks</option>
               </select>
+              <button onChange={(e) => this.onChange(e)}>Update Search</button>
             </form>
           </div>
         </div>
